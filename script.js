@@ -81,3 +81,21 @@ doorImage3.onclick = () => {
     playDoor(doorImage3);
   }
 };
+
+// Link startRound function to startButton
+startButton.onclick = () => {
+  if (!currentlyPlaying) {
+    startRound();
+  }
+};
+
+// Start round function
+function startRound() {
+  numClosedDoors = 3;
+  doorImage1.src = closedDoorPath;
+  doorImage2.src = closedDoorPath;
+  doorImage3.src = closedDoorPath;
+  startButton.innerHTML = 'Good luck!';
+  currentlyPlaying = true;
+  randomChoreDoorGenerator();
+}
