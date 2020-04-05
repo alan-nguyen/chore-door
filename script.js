@@ -21,3 +21,12 @@ function isBot(door) {
     return false;
   }
 }
+
+// Check if the door has been clicked
+function isClicked(door) {
+  if (door.src === closedDoorPath) {
+    return false;
+  } else {
+    return true;
+  }
+}
