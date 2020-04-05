@@ -12,3 +12,12 @@ const closedDoorPath =
 let startButton = document.querySelector('#start');
 let numClosedDoors = 3;
 let currentlyPlaying = true;
+
+// Check if a door has the game-ending ChoreBot
+function isBot(door) {
+  if (door.src === botDoorPath) {
+    return true;
+  } else {
+    return false;
+  }
+}
