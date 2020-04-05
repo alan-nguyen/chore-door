@@ -109,3 +109,6 @@ function gameOver(status) {
   }
   currentlyPlaying = false;
 }
+
+// Initiate a new round
+startRound();
