@@ -99,3 +99,13 @@ function startRound() {
   currentlyPlaying = true;
   randomChoreDoorGenerator();
 }
+
+// Game over
+function gameOver(status) {
+  if (status === 'win') {
+    startButton.innerHTML = 'You win! Play again?';
+  } else {
+    startButton.innerHTML = 'Game over! Play again?';
+  }
+  currentlyPlaying = false;
+}
