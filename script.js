@@ -30,3 +30,13 @@ function isClicked(door) {
     return true;
   }
 }
+
+// Play Door
+function playDoor(door) {
+  numClosedDoors--;
+  if (numClosedDoors === 0) {
+    gameOver('win');
+  } else if (isBot(door)) {
+    gameOver();
+  }
+}
