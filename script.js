@@ -59,3 +59,25 @@ const randomChoreDoorGenerator = () => {
     openDoor2 = spaceDoorPath;
   }
 };
+
+// Assign image to each door
+doorImage1.onclick = () => {
+  if (!isClicked(doorImage1) && currentlyPlaying) {
+    doorImage1.src = openDoor1;
+    playDoor(doorImage1);
+  }
+};
+
+doorImage2.onclick = () => {
+  if (!isClicked(doorImage2) && currentlyPlaying) {
+    doorImage2.src = openDoor2;
+    playDoor(doorImage2);
+  }
+};
+
+doorImage3.onclick = () => {
+  if (!isClicked(doorImage3) && currentlyPlaying) {
+    doorImage3.src = openDoor3;
+    playDoor(doorImage3);
+  }
+};
